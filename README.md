@@ -1,79 +1,120 @@
-# 🚀 Projeto Front-End – Consumo de API com JavaScript
+#  Projeto: Busca de Personagens - Rick and Morty
 
-Este projeto foi desenvolvido como parte da disciplina de **Programação de Sítios Internet** - FATEC.
+##  Descrição
 
-## 🎯 Objetivo
-
-Criar uma aplicação web utilizando **JavaScript puro (Vanilla JS)** para consumir dados de uma **API pública**, exibindo os resultados de forma dinâmica em uma interface amigável.
+Este projeto é uma aplicação web simples que permite buscar personagens da série **Rick and Morty** utilizando uma API pública. O usuário digita o nome de um personagem e o sistema exibe até **3 resultados** em formato de cards, contendo imagem, nome e status.
 
 ---
 
-## 💡 Funcionalidades
+##  Funcionalidades
 
-- Campo de busca por nome
-- Consumo de API com `fetch()`
-- Exibição de resultados em formato de cards
-- Manipulação do DOM
-- Tratamento de erros
-- Interface organizada e responsiva
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- HTML
-- CSS
-- JavaScript (Vanilla JS)
+*  Busca de personagens por nome
+*  Consumo de API externa (Rick and Morty API)
+*  Exibição de imagem do personagem
+*  Informações básicas (nome e status)
+*  Interface simples e responsiva
+*  Botão "LEARN MORE" com alerta informativo
 
 ---
 
-## 🔗 Acesse o Projeto
+## Estrutura do Projeto
 
-- 💻 GitHub: [COLE AQUI O LINK]
-- 🌐 GitHub Pages: [COLE AQUI O LINK]
-
----
-
-## 📚 Sobre o Projeto
-
-A aplicação permite buscar personagens em uma API pública e exibir suas informações de forma dinâmica, reforçando conceitos fundamentais de desenvolvimento front-end como:
-
-- Requisições HTTP
-- Manipulação de elementos HTML via JavaScript
-- Interatividade com o usuário
+```
+ projeto
+├── index.html   # Estrutura da página
+├── style.css    # Estilização visual
+└── script.js    # Lógica da aplicação
+```
 
 ---
 
-## 📸 Preview
+##  Explicação dos Arquivos
 
-![](./preview.png)
+###  `index.html`
 
----
+Responsável pela estrutura da página:
 
-## 📢 Post no LinkedIn
-
-Confira a publicação sobre este projeto:
-
-👉 [COLE AQUI O LINK DO POST]
-
----
-## Critérios
-* [ ] Foi criado o campo de busca? (0,5)
-* [ ] Os cards são criados dinamicamente? (1,5)
-* [ ] Os cards são criados dependendo da busca? (1,5)
-* [ ] Foi utilizado métodos para criar os novos elementos HTML? (1,5)
-* [ ] O consumo de API foi feito usando o `fetch()`? (1,5)
-* [ ] Incluiu tratamento de erro no campo de busca? (0,5)
-* [ ] Está responsivo? (1,0)
-* [ ] Foi criado o README com informações do projeto? (1,0)
-* [ ] Foi habilitado o github Pages? (0,5)
-* [ ] Foi publicado no linkedIn? (0,5)
+* Contém um **campo de busca** para digitar o nome do personagem
+* Um botão que chama a função `buscar()`
+* Uma seção (`#resultado`) onde os cards são exibidos
 
 ---
 
-## 👨‍🏫 Disciplina
+###  `style.css`
 
-**Programação de Sítios Internet**  
-Prof. Fernando Leonid – 2026
+Define o estilo visual da aplicação:
+
+* Reset básico de CSS
+* Layout centralizado e organizado
+* Estilização do header
+* Configuração dos cards (tamanho, bordas, imagens)
+* Estilo dos botões e campos de entrada
 
 ---
+
+###  `script.js`
+
+Contém a lógica principal:
+
+* Função `buscar()` que:
+
+  * Captura o valor digitado pelo usuário
+  * Faz uma requisição à API usando `fetch`
+  * Converte a resposta em JSON
+  * Limita os resultados a 3 personagens
+  * Cria dinamicamente os cards no HTML
+* Tratamento de erro caso nenhum personagem seja encontrado
+
+---
+
+## API Utilizada
+
+* Rick and Morty API
+* Endpoint:
+
+```
+https://rickandmortyapi.com/api/character/?name=...
+```
+
+---
+
+## ▶Como Usar
+
+1. Abra o arquivo `index.html` no navegador
+2. Digite o nome de um personagem
+3. Clique em **Pesquisar**
+4. Veja os resultados exibidos na tela
+
+---
+
+## Tecnologias Utilizadas
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* API REST
+
+---
+
+## Observações
+
+* A busca depende da conexão com a internet
+* Caso o personagem não seja encontrado, uma mensagem de erro é exibida
+* O botão "LEARN MORE" atualmente mostra apenas um alerta (pode ser expandido futuramente)
+
+---
+
+## Possíveis Melhorias
+
+* Página de detalhes do personagem
+* Paginação de resultados
+* Melhor tratamento de erros
+* Animações e melhorias visuais
+* Responsividade para dispositivos móveis
+
+---
+
+##  Aluno
+Nicholas Guzzon Domingues Klaus
+
+Projeto desenvolvido para fins de estudo e prática de desenvolvimento web.

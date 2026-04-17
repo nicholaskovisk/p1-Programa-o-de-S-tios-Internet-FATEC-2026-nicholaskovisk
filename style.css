@@ -1,0 +1,82 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Área principal */
+main {
+    padding: 30px;
+}
+
+/* Busca */
+.busca {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.busca input {
+    width: 400px;
+    padding: 8px;
+}
+
+.busca button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Cards */
+#resultado {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+.card {
+    width: 220px;
+    background: #eee;
+    border: 1px solid #999;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Imagem */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #999;
+}
+
+/* Texto */
+.card p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Botão */
+.card button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
